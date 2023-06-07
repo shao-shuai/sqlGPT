@@ -1,0 +1,18 @@
+{
+  "name": "gpt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "author": "Shuai Shao",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "path": "^0.12.7",
+    "pg": "^8.11.0"
+  }
+}
