@@ -8,6 +8,7 @@ module.exports = {
     path: path.join(__dirname, '/dist'),
     filename: 'bundle.js',
   },
+  mode: process.env.NODE_ENV,
 
   plugins: [
     new HTMLWebpackPlugin({
@@ -26,11 +27,16 @@ module.exports = {
           },
         },
       },
-      //   {
-      //     test: /.(css|scss)$/,
-      //     exclude: /node_modules/,
-      //     use: ['style-loader', 'css-loader', 'sass-loader'],
-      //   },
     ],
+  },
+
+  devServer: {
+    static: {
+      publicPath: '/dist',
+      directory: path.resolve(__dirname, 'dist'),
+    },
+    proxy: {
+      '/api': 'http://localhost:3000',
+    },
   },
 };
