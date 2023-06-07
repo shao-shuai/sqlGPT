@@ -8,6 +8,7 @@ This project is for drilling my skills in React and Express. The idea is buidlin
 4. The API would return SQL query string for querying database
 5. Query the database with the query string and return data to the frontend
 
-- For database schema, check `dellstore2-normal-1.0.sql`, remember to add constraints and index
+- For database schema, check `dellstore2-normal-1.0.sql`, remember to add constraints and index.
+- Below is an ER diagram of the database used in this project
 
 ![](./images/erd.png)
