@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
-    "start-front": "webpack-dev-server --mode development --open --hot"
+    "start-front": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
   },
   "author": "Shuai Shao",
   "license": "MIT",
