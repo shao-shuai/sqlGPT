@@ -27,7 +27,16 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.s?css/,
+        // loaders  can be chained in reverse order, must be JS by the end
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
     ],
+  },
+  // allow imports without specifying the file extension
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
 
   devServer: {

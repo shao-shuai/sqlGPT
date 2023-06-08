@@ -12,12 +12,20 @@
   "author": "Shuai Shao",
   "license": "MIT",
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.4",
+    "@mui/x-data-grid": "^6.6.0",
+    "css-loader": "^6.8.1",
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
     "path": "^0.12.7",
     "pg": "^8.11.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.3.1",
+    "style-loader": "^3.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.22.1",

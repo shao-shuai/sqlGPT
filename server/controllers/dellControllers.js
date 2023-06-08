@@ -17,4 +17,16 @@ dellController.getCustomers = (req, res, next) => {
   });
 };
 
+dellController.testQuery = (req, res, next) => {
+  const query = 'SELECT * FROM orders limit 1000';
+
+  db.query(query, (err, results) => {
+    if (err) {
+      return next(err);
+    }
+    res.locals.customers = results.rows;
+    return next();
+  });
+};
+
 module.exports = dellController;
